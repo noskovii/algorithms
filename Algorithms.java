@@ -74,13 +74,13 @@ public class Algorithms {
 
     public static void bubbleSort(int[] mas) {
         // for (int i = 0; i < mas.length; i++) {
-        // for (int j = mas.length - 1; j > i; j--) {
-        // if (mas[j - 1] > mas[j]) {
-        // int temp = mas[j - 1];
-        // mas[j - 1] = mas[j];
-        // mas[j] = temp;
-        // }
-        // }
+        //     for (int j = mas.length - 1; j > i; j--) {
+        //         if (mas[j - 1] > mas[j]) {
+        //             int temp = mas[j - 1];
+        //             mas[j - 1] = mas[j];
+        //             mas[j] = temp;
+        //         }
+        //     }
         // }
 
         for (int i = mas.length - 1; i > 0; i--) {
