@@ -16,10 +16,21 @@ public class Algorithms {
         resetMas(mas);
         System.out.println();
 
-        bubbleSort(mas);
+        printMas(mas);
+        mergeSort(mas, 0, mas.length - 1);
+        printMas(mas);
+        resetMas(mas);
+        System.out.println();
+
+        printMas(mas);
+        quickSort(mas, 0, mas.length - 1);
+        printMas(mas);
+        System.out.println();
+
         int el = 3;
         int ind = binarySearch(mas, el);
         System.out.println("index of " + el + " = " + ind);
+        System.out.println();
 
         int n = 3;
         System.out.println("fact " + n + " = " + fact(n));
@@ -29,6 +40,7 @@ public class Algorithms {
         for (int i = 1; i <= t; i++) {
             System.out.print(fib(i) + " ");
         }
+        System.out.println();
         System.out.println();
 
         char[] str = { 'a', 'b', 'c', 'd', 'e' };
@@ -41,19 +53,6 @@ public class Algorithms {
         for (int i = 0; i < str.length; i++) {
             System.out.print(str[i] + " ");
         }
-
-        System.out.print("\n");
-
-        resetMas(mas);
-        printMas(mas);
-        mergeSort(mas, 0, mas.length - 1);
-        printMas(mas);
-
-        System.out.print("\n");
-        resetMas(mas);
-        printMas(mas);
-        quickSort(mas, 0, mas.length - 1);
-        printMas(mas);
     }
 
     public static void printMas(int[] mas) {
